@@ -15,6 +15,30 @@ public class AppRepositoryImpl implements AppRepository {
 	List<Services> services = new ArrayList<>();
 	List<Rezervation> rezervations = new ArrayList<>();
 
+	public List<User> getUsers() {
+		return users;
+	}
+
+	public void setUsers(List<User> users) {
+		this.users = users;
+	}
+
+	public List<Rezervation> getRezervations() {
+		return rezervations;
+	}
+
+	public void setRezervations(List<Rezervation> rezervations) {
+		this.rezervations = rezervations;
+	}
+
+	public List<Services> getServices() {
+		return services;
+	}
+
+	public void setServices(List<Services> services) {
+		this.services = services;
+	}
+
 	@Override
 	public User saveUser(User user) {
 		users.add(user);
